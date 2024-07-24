@@ -1,0 +1,177 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="Home.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    <body>
+        <!-- Nav-Start  -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Trendify</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" id="nav-btn" type="submit">Search</button>
+                    </form>
+                    <a href="#" class="nav-link"
+                        ><i class="fas fa-shopping-cart cart"></i>
+                        <span class="cart-badge position-absolute top-10 translate-middle badge rounded-pill bg-danger">
+                            9
+                            <span class="visually-hidden">unread messages</span>
+                        </span></a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- Nav-End  -->
+
+        <!-- Sliders-Start  -->
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/carousel img -1.jpg" class="d-block w-100" alt="Slider-1" />
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/carousel img -6.jpg" class="d-block w-100" alt="Slider-2" />
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/carousel img -3.jpg" class="d-block w-100" alt="Slider-3" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Sliders-End  -->
+
+        <!-- Category-Start  -->
+
+        <div class="container-fluid home_category">
+            <div class="heading">
+                <h3>Shop by Category</h3>
+            </div>
+            <div class="row">
+                <div class="home_category_items col-md-4">
+                    <img src="Images/Men's Clothing.jpg" alt="Men's Clothing" />
+                    <h5>Men's Clothings</h5>
+                </div>
+                <div class="home_category_items col-md-4">
+                    <img src="Images/Women's Clothing.jpg" alt="Women's Clothing" />
+                    <h5>Women's Clothings</h5>
+                </div>
+                <div class="home_category_items col-md-4">
+                    <img src="Images/Children's Clothing.jpg" alt="Children's Clothing" />
+                    <h5>Children's Clothings</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category-End  -->
+
+        <!-- Latest-Product-Start  -->
+
+        <div class="container-fluid latest_product">
+            <div class="heading">
+                <h3>Latest Products</h3>
+            </div>
+            <div class="row">
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product1.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product6.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product3.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product5.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product2.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+                <div class="latest_product_items col-md-4">
+                    <img src="Images/latest_product4.avif" alt="" />
+                    <span>Badge</span>
+                    <h6>product Name</h6>
+                    <p>price</p>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
