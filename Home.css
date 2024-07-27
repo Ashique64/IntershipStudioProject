@@ -1,5 +1,11 @@
-
-
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    color: #fdb123;
+    background-color: #161717;
+}
 
 /* Nav-Section */
 
@@ -25,8 +31,8 @@
 
 .navbar-collapse {
     padding-left: 100px;
-    font-weight: 400;
-    animation: fadeIn 3s ease-in-out;
+    font-weight: 700;
+    /* animation: fadeIn 3s ease-in-out; */
 }
 
 .nav-link {
@@ -148,9 +154,7 @@
     opacity: 1;
 }
 
-
 /* Latest-Product-Section */
-
 
 .latest_product > .heading {
     display: flex;
@@ -168,20 +172,25 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px 0px;
+    padding: 10px 0px;
 }
-
 
 .latest_product_items {
     height: 380px;
     width: 280px;
     border: 2px solid #fdb123;
-    margin:10px;
+    margin: 10px;
     padding: 0;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     text-align: center;
+}
+
+.latest_product_items:hover img {
+    height: 100%;
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
 }
 
 .latest_product_items > img {
@@ -191,11 +200,6 @@
     cursor: pointer;
 }
 
-.latest_product_items > img:hover{
-    height: 100%;
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out;
-}
 
 .latest_product_items > .badge {
     position: absolute;
@@ -209,8 +213,8 @@
     color: #161717;
     border: 1px solid #161717;
     font-weight: bold;
+    animation: badge-bounce 2s infinite;
 }
-
 
 .latest_product_items > h6 {
     background-color: #fdb123;
@@ -219,7 +223,6 @@
     padding-top: 10px;
     cursor: pointer;
     color: #586995;
-    
 }
 
 .latest_product_items > p {
@@ -231,33 +234,136 @@
     color: #161717;
 }
 
+/* Our-Feature-Section  */
 
+.our_features {
+    padding: 120px 0px 70px 0px;
+}
 
+.our_features > .heading {
+    text-align: center;
+    padding: 30px 0px 90px 0px;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
 
+.our_features > .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 40px;
+}
 
+.our_features > .row > .feature {
+    background-color: #fdb123;
+    margin: 5px 0px;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid white;
+    cursor: pointer;
+    width: 330px;
+}
 
+.feature > i {
+    color: #161717;
+    font-size: 30px;
+    cursor: pointer;
+}
 
+.feature > h6 {
+    color: #161717;
+    padding: 10px 0px;
+    font-weight: 700;
+}
 
+.feature > p {
+    color: #374260;
+    font-size: 10px;
+}
 
+/* Footer-Sections */
 
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Merriweather", serif;
-    color: #fdb123;
-    background-color: #161717;
-    /* border: 1px solid white; */
+.footer {
+    padding: 100px 15px 20px 15px;
 }
 
 
 
+.footer .col-md-3:nth-child(1) > a{
+    font-weight: 900;
+    color: #fdb123;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: none;
+    
+}
 
+.footer .col-md-3:nth-child(1) > p{
+    color: #fdb123;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
 
+.footer_links > h4{
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 18px;
+    text-decoration: none;
+    /* margin-top: 10px;
+    margin-left: 28px; */
+    margin: 10px 0px 30px 28px;
+    
+}
 
+.footer_links > ul > li{
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 12px;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.footer_links > ul > li:hover{
+    text-decoration: underline;
+    
+}
+
+.copy_right {
+    text-align: center;
+    border-top: 1px solid #fdb123;
+    padding: 20px 0px;
+}
+
+.copy_right > h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.backtop {
+    position: relative;
+
+}
+
+.backtop > a {
+    color: #374260;
+    background-color: #fdb123;
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
+    position: fixed;
+    z-index: 999;
+}
+
+.backtop > a:hover {
+    outline: 1px solid #fdb123;
+}
 
 
 
@@ -280,5 +386,15 @@
     }
     50% {
         transform: scale(1.5);
+    }
+}
+
+@keyframes badge-bounce {
+    0%,
+    100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.3);
     }
 }
