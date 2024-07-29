@@ -30,9 +30,8 @@ body {
 }
 
 .navbar-collapse {
-    padding-left: 100px;
     font-weight: 700;
-    /* animation: fadeIn 3s ease-in-out; */
+    margin-left: 300px;
 }
 
 .nav-link {
@@ -47,17 +46,6 @@ body {
     text-decoration: underline;
 }
 
-#nav-btn {
-    color: #fdb123;
-    border: 2px solid #fdb123;
-    background-color: transparent;
-}
-
-#nav-btn:hover {
-    color: #fff;
-    background-color: #fdb123;
-    border-color: #fdb123;
-}
 
 .cart {
     font-size: 22px;
@@ -68,7 +56,7 @@ body {
     font-size: 7px;
 }
 
-/* Heading-Secction  */
+/* Heading-Section  */
 
 .heading {
     text-align: center;
@@ -138,14 +126,72 @@ form > .price {
     font-size: 12px;
 }
 
+/* Product-Listing-Section  */
 
+.product_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.product_list > .col-md-4 {
+    height: 340px;
+    width: 250px;
+    border: 2px solid #fdb123;
+    margin: 10px;
+    padding: 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product_list > .col-md-4:hover img {
+    height: 100%;
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.product_list > .col-md-4 > img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product_list > .col-md-4 > .badge {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 1;
+    font-size: 8px;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: #fdb123;
+    color: #161717;
+    border: 1px solid #161717;
+    font-weight: bold;
+    animation: badge-bounce 2s infinite;
+}
+
+.product_list > .col-md-4 > h6 {
+    background-color: #fdb123;
+    margin: 0;
+    font-size: 14px;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #586995;
+}
+.product_list > .col-md-4 > p {
+    background-color: #fdb123;
+    margin: 0;
+    padding: 4px 0px 9px 0px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #161717;
+}
 
 /* Footer-Sections */
-
-* {
-    /* border: 1px solid white; */
-}
 
 .footer {
     padding: 100px 15px 20px 15px;
@@ -233,5 +279,15 @@ form > .price {
     }
     50% {
         transform: scale(1.5);
+    }
+}
+
+@keyframes badge-bounce {
+    0%,
+    100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.3);
     }
 }
