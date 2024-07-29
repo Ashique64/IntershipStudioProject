@@ -104,6 +104,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-left: 25px;
 }
 
 .home_category_items {
@@ -314,8 +315,6 @@ body {
     color: #fdb123;
     font-size: 18px;
     text-decoration: none;
-    /* margin-top: 10px;
-    margin-left: 28px; */
     margin: 10px 0px 30px 28px;
     
 }
