@@ -2,14 +2,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Products</title>
+        <title>Product Details</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="Product.css" />
+        <link rel="stylesheet" href="Product_Details.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -66,89 +66,78 @@
 
         <!-- Nav-End  -->
 
-        <!-- Product-Listing-Start  -->
+        <!-- Product-Details-Start  -->
 
         <div class="container-fluid">
             <div class="heading">
-                <h3>Products</h3>
+                <h3>Product Details</h3>
             </div>
-            <div class="row product">
-                <div class="col-md-3 filter">
-                    <h6>Filters</h6>
-                    <div class="category_filter">
-                        <label>Category</label>
-                        <a>Men's</a>
-                        <a>Womens</a>
-                        <a>Kids</a>
-                        <a>Footwear</a>
-                        <a>Accessories</a>
-                        <a>Seasonal Collections</a>
-                    </div>
-
-                    <form>
-                        <label>Price</label>
-                        <input type="range" min="100" max="10000" step="100" />
-                        <div class="price">
-                            <label>&#x20B9;100</label>
-                            <label>&#x20B9;10000</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
                         </div>
-                    </form>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/Images/latest_product5.avif" class="d-block w-100 carousel-img" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Images/saree-1.avif" class="d-block w-100 carousel-img" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Images/saree-2.avif" class="d-block w-100 carousel-img" alt="..." />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row product_list">
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product5.avif" alt="Product" />
-                            </a>
-                            <span class="badge">New</span>
-                            <h6>Woven Saree with Contrast Border</h6>
-                            <p>&#x20B9;3249</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product2.avif" alt="Product" />
-                            </a>
-                            <h6>Spread Collared Checked Shirt</h6>
-                            <p>&#x20B9;1599</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product4.avif" alt="Product" />
-                            </a>
-                            <span class="badge">New</span>
-                            <h6>Men Patterned Regular Fit Shirt</h6>
-                            <p>&#x20B9;1099</p>
-                        </div>
+                <div class="col-md-6 details">
+                    <h3 class="product_name">Woven Saree with Contrast Border</h3>
+                    <p class="product_brand">Saree</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
-                    <div class="row product_list">
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product1.avif" alt="Product" />
-                            </a>
-                            <h6>Men Regular Fit Shirt</h6>
-                            <p>&#x20B9;2099</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product6.avif" alt="Product" />
-                            </a>
-                            <span class="badge">New</span>
-                            <h6>Semi-Stitched Anarkali Dress</h6>
-                            <p>&#x20B9;9999</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="Product_Details.html">
-                                <img src="Images/latest_product3.avif" alt="Product" />
-                            </a>
-                            <h6>Men Ribbed Regular Fit Shirt</h6>
-                            <p>&#x20B9;1899</p>
-                        </div>
+                    <div class="price">
+                        <p>&#x20B9; 3249</p>
                     </div>
+                    <div class="description">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur est doloremque,
+                            voluptatum ad fuga excepturi tenetur, optio nihil mollitia repellendus, laboriosam harum a
+                            voluptates architecto nesciunt sunt dignissimos labore!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur est doloremque,
+                            voluptatum ad fuga excepturi tenetur, optio nihil mollitia repellendus, laboriosam harum a
+                            voluptates architecto nesciunt sunt dignissimos labore!
+                        </p>
+                    </div>
+                    <button>Add to Cart</button>
                 </div>
             </div>
         </div>
 
-        <!-- Product-Listing-End  -->
+        <!-- Product-Details-End  -->
 
         <!-- Footer-Start  -->
 
