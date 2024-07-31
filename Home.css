@@ -353,7 +353,6 @@ body {
 .backtop > a {
     color: #374260;
     background-color: #fdb123;
-    position: absolute;
     right: 40px;
     bottom: 70px;
     position: fixed;
