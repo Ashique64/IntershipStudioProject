@@ -114,16 +114,16 @@ body {
     padding: 0;
     border-radius: 20px;
     position: relative;
-    border: 3px solid #91a4d5;
+    border: 3px solid #fdb123;
     transition: 0.5s ease-out;
 }
 
 .home_category_items:hover {
-    border-color: #fdb123;
+    border-color: #782626;
     box-shadow: 0 14px 12px 0 rgba(0, 0, 0, 0.25);
 }
 
-.home_category_items > img {
+.home_category_items > a > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -141,7 +141,7 @@ body {
     transform: translate(53%, 100%);
     padding: 7px 15px;
     font-size: 14px;
-    border: 1px solid #91a4d5;
+    border: 1px solid #782626;
     background-color: #161717;
     color: #fdb123;
     display: inline-block;
