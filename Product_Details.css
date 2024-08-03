@@ -112,7 +112,7 @@ body {
     color: #696691;
 }
 
-.details > button {
+.details > a {
     margin-top: 10px;
     background-color: #782626;
     color: #fdb123;
@@ -121,10 +121,10 @@ body {
     border: 1px solid #fdb123;
     font-size: 12px;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    text-decoration: none;
 }
 
-.details > button:hover {
+.details > a:hover {
     background-color: #fdb123;
     color: #782626;
     border: 2px solid #782626;
