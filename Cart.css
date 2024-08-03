@@ -70,6 +70,7 @@ body {
     margin: 10px;
     padding: 15px;
     border-radius: 20px;
+    gap: 10px;
 }
 
 .cart_row > .col-md-8 > h4 > span {
@@ -78,7 +79,6 @@ body {
 
 .cart_row > .col-md-8 {
     background-color: #782626;
-    /* border: 2px solid #fdb123; */
     padding: 30px;
     border-radius: 20px;
 }
@@ -168,6 +168,75 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-align: center;
+}
+
+.order_summary {
+    background-color: #782626;
+    border-radius: 20px;
+    width: 32%;
+    padding: 30px;
+}
+
+.order_summary > h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_item > p {
+    font-size: 12px;
+}
+
+.product_amount {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.total_amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_amount > p {
+    font-size: 13px;
+    font-weight: bold;
+}
+.total_amount > p > span{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.total_amount > .amount {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.checkout {
+    background-color: #fdb123;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+.checkout > a {
+    text-decoration: none;
+    color: #782626;
+}
+
+.checkout:hover {
+    outline: 1.5px solid #fdb123;
+    background-color: transparent;
+    color: #fdb123;
+}
+
+.checkout:hover a {
+    color: #fdb123;
 }
 
 

@@ -23,7 +23,7 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Trendify</a>
+                <a class="navbar-brand" href="/Home.html">Trendify</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -53,10 +53,10 @@
                             <a class="nav-link" href="/Conatct.html">Contact Us</a>
                         </li>
                     </ul>
-                    <a href="#" class="nav-link"
+                    <a href="/Cart.html" class="nav-link"
                         ><i class="fas fa-shopping-cart cart"></i>
                         <span class="cart-badge position-absolute top-10 translate-middle badge rounded-pill bg-danger">
-                            9
+                            2
                             <span class="visually-hidden">unread messages</span>
                         </span></a
                     >
@@ -131,7 +131,7 @@
                             >
                                 <i class="fas fa-minus"></i>
                             </button>
-                            <input class="quantity text-center" min="1" max="10" name="quantity" value="1" type="number" />
+                            <input class="quantity text-center" min="1" max="10" name="quantity" value="2" type="number" />
                             <button
                                 onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                                 class="btn btn-sm btn-outline-white"
@@ -145,7 +145,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-3 order_summary">
+                    <h5>Order Summary</h5>
+                    <div class="order_item">
+                        <p class="order_product_name">Woven's Sarees with Contrast </p>
+                        <p>1</p>
+                        <p class="product_amount">&#x20B9;3249</p>
+                    </div>
+                    <div class="order_item">
+                        <p class="order_product_name">Men Ribbeds Regular Fit Shirt</p>
+                        <p>2</p>
+                        <p class="product_amount">&#x20B9;3798</p>
+                    </div>
+                    <hr>
+                    <div class="total_amount">
+                        <p>Total Amount <br>
+                        <span>(including VAT)</span></p>
+                        <p class="amount">&#x20B9;7047</p>
+                    </div>
+                    <div class="Checkout">
+                        <a href="/Checkout.html">Go to Checkout</a>
+                    </div>
+                </div>
             </div>
         </div>
 
