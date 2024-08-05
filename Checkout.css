@@ -106,7 +106,6 @@ body {
 }
 
 .checkout_form > a {
-    /* border: 1px solid white; */
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -118,6 +117,7 @@ body {
     color: #782626;font-weight: bold;
     border-radius: 10px;
     padding: 8px 25px;
+    border: 1.4px solid #782626;
 }
 
 .checkout_form > a > button:hover {
