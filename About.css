@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    color: #fdb123;
+    background-color: #161717;
+}
+
+/* Nav-Section */
+
+.navbar {
+    height: 85px;
+    padding: 0px 20px;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    color: #fdb123;
+    font-size: 22px;
+    font-style: italic;
+    transform: scale(1.2);
+    font-family: "Merriweather", serif;
+    padding: 2px 15px;
+    animation: logo-bounce 2s infinite;
+}
+
+.navbar-brand:hover {
+    color: #fdb123;
+}
+
+.navbar-collapse {
+    font-weight: 700;
+    margin-left: 300px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #fdb123;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    color: #fdb123;
+    transition: 0.4s ease-in-out;
+    text-decoration: underline;
+}
+
+.cart {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.cart-badge {
+    font-size: 7px;
+}
+
+/* About-Us-Section  */
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    cursor: pointer;
+    padding: 100px 0px 90px 0px;
+}
+
+.our_mission {
+    padding: 20px 40px 80px 40px;
+}
+
+.our_mission_img > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.our_mission_text > h4{
+    color: #782626;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #fdb123;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+.our_mission_text > p {
+    font-size: 15px;
+}
+
+.our_carousel {
+    padding: 20px 40px;
+    margin-top: 40px;
+    background-color: #fdb123;
+    color: #782626;
+    margin-bottom: 20px;
+}
+
+.test {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test > .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.test > .avatar > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.test > p {
+    font-size: 12px;
+    padding: 0px 70px;
+}
+
+.test > h4 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.test > h6 {
+    color: #374260;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.features {
+    padding: 80px 40px;
+    margin-top: 50px;
+}
+
+.features > .col-md-3 {
+    margin: 5px;
+    width: 24%;
+    
+}
+
+.feature_card {
+    background-color: #fdb123;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* width: 180px; */
+}
+
+.feature_card > i {
+    font-size: 28px;
+    color: #374260;
+}
+
+.feature_card > p {
+    color: #782626;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* Footer-Sections */
+
+.footer {
+    padding: 100px 15px 20px 15px;
+}
+
+.footer .col-md-3:nth-child(1) > a {
+    font-weight: 900;
+    color: #fdb123;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.footer .col-md-3:nth-child(1) > p {
+    color: #fdb123;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer_links > h4 {
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0px 30px 28px;
+}
+
+.footer_links > ul > li {
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 12px;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer_links > ul > li:hover {
+    text-decoration: underline;
+}
+
+.copy_right {
+    text-align: center;
+    border-top: 1px solid #fdb123;
+    padding: 20px 0px;
+}
+
+.copy_right > h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.backtop {
+    position: relative;
+}
+
+.backtop > a {
+    color: #374260;
+    background-color: #fdb123;
+    right: 40px;
+    bottom: 70px;
+    position: fixed;
+    z-index: 999;
+}
+
+.backtop > a:hover {
+    outline: 1px solid #fdb123;
+}
+
+@keyframes logo-bounce {
+    0%,
+    100% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
