@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -20,7 +21,6 @@
     </head>
     <body id="top">
         <!-- Nav-Start  -->
-
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/Home.html">Trendify</a>
@@ -63,11 +63,9 @@
                 </div>
             </div>
         </nav>
-
         <!-- Nav-End  -->
 
         <!-- Contact-Start  -->
-
         <div class="container-fluid">
             <div class="heading">
                 <h3>Contact Us</h3>
@@ -93,28 +91,27 @@
             <div class="row contact_form">
                 <div class="col-md-7">
                     <h6>Form</h6>
-                    <div class="item">
-                        <label for="">Name</label>
-                        <input class="form-control" type="text" placeholder="Name">
-                    </div>
-                    <div class="item">
-                        <label for="">Email</label>
-                        <input class="form-control" type="email" placeholder="E-mail">
-                    </div>
-                    <div class="item">
-                        <label for="">Message</label>
-                        <textarea class="form-control" name="" id="" placeholder="Message" rows="4"></textarea>
-                    </div>
-                    <a href="">Submit</a>
+                    <form action="Contact.html" method="post" id="contactForm">
+                        <div class="item">
+                            <label for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="item">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="email" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="item">
+                            <label for="msg">Message</label>
+                            <textarea class="form-control" id="msg" placeholder="Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-        
-
         <!-- Contact-End  -->
 
         <!-- Footer-Start  -->
-
         <div class="container-fluid">
             <div class="row footer">
                 <div class="col-md-3">
@@ -158,7 +155,6 @@
                 <h4>Copyright &copy;2024 All rights reserved</h4>
             </div>
         </div>
-
         <!-- Footer-End  -->
 
         <div class="backtop">
@@ -172,5 +168,54 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+
+                var errorElements = document.querySelectorAll('.error');
+                errorElements.forEach(function(element) {
+                    element.remove();
+                });
+
+                var isValid = true;
+
+                var name = document.getElementById('name').value;
+                if (name.trim() === '') {
+                    isValid = false;
+                    showError('name', 'Name is required.');
+                }
+
+                var email = document.getElementById('email').value;
+                if (!validateEmail(email)) {
+                    isValid = false;
+                    showError('email', 'Please enter a valid email address.');
+                }
+
+                var message = document.getElementById('msg').value;
+                if (message.trim() === '') {
+                    isValid = false;
+                    showError('msg', 'Message is required.');
+                }
+
+                if (!isValid) {
+                    event.preventDefault();
+                }
+            });
+
+            function showError(id, message) {
+                var element = document.getElementById(id);
+                var error = document.createElement('div');
+                error.className = 'error';
+                error.style.color = '#a83333';
+                error.style.fontSize = '12px'
+                error.innerText = message;
+                element.parentElement.appendChild(error);
+            }
+
+            function validateEmail(email) {
+                var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        </script>
     </body>
 </html>

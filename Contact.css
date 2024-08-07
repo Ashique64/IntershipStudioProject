@@ -136,8 +136,8 @@ body {
     font-size: 14px;
 }
 
-.contact_form > .col-md-7 > a {
-    display: block;
+.contact_form > .col-md-7 > form > button {
+    width: 100%;
     text-align: center;
     background-color: #782626;
     color: #fdb123;
@@ -148,9 +148,9 @@ body {
     border: 1.4px solid #782626;
 }
 
-.contact_form > .col-md-7 > a:hover {
+.contact_form > .col-md-7 > form > button:hover {
     background-color: transparent;
-    color: #782626;
+    color: #782626; 
 }
 
 
