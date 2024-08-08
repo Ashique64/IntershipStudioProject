@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    color: #fdb123;
+    background-color: #161717;
+}
+
+/* Nav-Section */
+
+.navbar {
+    height: 85px;
+    padding: 0px 20px;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    color: #fdb123;
+    font-size: 22px;
+    font-style: italic;
+    transform: scale(1.2);
+    font-family: "Merriweather", serif;
+    padding: 2px 15px;
+    animation: logo-bounce 2s infinite;
+}
+
+.navbar-brand:hover {
+    color: #fdb123;
+}
+
+.navbar-collapse {
+    font-weight: 700;
+    margin-left: 300px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #fdb123;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    color: #fdb123;
+    transition: 0.4s ease-in-out;
+    text-decoration: underline;
+}
+
+.cart {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.cart-badge {
+    font-size: 7px;
+}
+
+/* About-Us-Section  */
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    cursor: pointer;
+    padding: 100px 0px 90px 0px;
+}
+
+.search_product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-md-9 {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.search_bar > .input{
+    display: flex;
+}
+
+.search_bar > .input > span > button {
+    background-color: #782626;
+    margin-left: 5px;
+}
+
+.search_bar > p {
+    font-size: 12px;
+}
+
+.product > .row {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 0px;
+    transition: 0.3s ease-in;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.product > .row:hover {
+    border: 1px solid #fdb123;
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    
+}
+
+.product > .row > .col-md-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product > .row > .product_img {
+    height: 160px;
+}
+
+.product > .row > .product_img > img {
+    object-fit: contain;
+    width: 90%;
+    height: 100%;
+}
+
+.product > .row > .product_name > h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.product > .row > .product_name > p {
+    font-size: 12px;
+    color: #782626;
+}
+
+.product > .row > .rating {
+    display: flex;
+    justify-content: center;
+}
+
+.product > .row > .price > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+*{
+    /* border: 1px solid white; */
+}
+/* Footer-Sections */
+
+.footer {
+    padding: 100px 15px 20px 15px;
+}
+
+.footer .col-md-3:nth-child(1) > a {
+    font-weight: 900;
+    color: #fdb123;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.footer .col-md-3:nth-child(1) > p {
+    color: #fdb123;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer_links > h4 {
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0px 30px 28px;
+}
+
+.footer_links > ul > li {
+    font-weight: 500;
+    color: #fdb123;
+    font-size: 12px;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer_links > ul > li:hover {
+    text-decoration: underline;
+}
+
+.copy_right {
+    text-align: center;
+    border-top: 1px solid #fdb123;
+    padding: 20px 0px;
+}
+
+.copy_right > h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.backtop {
+    position: relative;
+}
+
+.backtop > a {
+    color: #374260;
+    background-color: #fdb123;
+    right: 40px;
+    bottom: 70px;
+    position: fixed;
+    z-index: 999;
+}
+
+.backtop > a:hover {
+    outline: 1px solid #fdb123;
+}
+
+@keyframes logo-bounce {
+    0%,
+    100% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
