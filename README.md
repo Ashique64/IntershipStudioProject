@@ -1,3 +1,7 @@
+
+Live URL
+- [https://friendly-mandazi-42cbbc.netlify.app/]
+
 <h2 align="left">Hi 👋! My name is Muhammed Ashique and I'm a Full Stack Developer</h2>
 
 ###
